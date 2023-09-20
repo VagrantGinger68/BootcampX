@@ -15,7 +15,7 @@ CREATE TABLE  assignment_submissions(
   submission_date DATE
 );
 
-SELECT students.name, cohorts.name, cohorts.start_date as cohort_start_date, students.start_date as student_start_date
+SELECT students.name, cohorts.name, cohorts.start_date as cohort_start_date, students.start_date as student_start_dcdate
 FROM students 
 JOIN cohorts ON cohort_id = cohorts.id
 WHERE cohorts.start_date != students.start_date
